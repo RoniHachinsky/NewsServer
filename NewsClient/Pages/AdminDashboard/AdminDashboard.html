@@ -1,0 +1,152 @@
+﻿
+<link href="Pages/AdminDashboard/AdminDashboard.css?v3" rel="stylesheet" />
+<section class="pt-5 pb-5">
+    <div class="container-xl">
+
+        <b id="categoryTitle" class="d-inline-block p-1 px-3 text-uppercase font_14 text-white bg_orange">Admin Dashboard</b>
+        <hr class="line mt-0 mb-4 bg_orange">
+
+        <div class="container-fluid dashboard-container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button id="refreshBtn" class="btn btn-primary bg_orange border-0 rounded-0 p-2 px-3 font_14">
+                            <i class="bi bi-arrow-clockwise me-2" style="font-size: 16px"></i>
+                            Refresh Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="row" id="statsContainer">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-people stat-icon text_orange"></i>
+                        <div class="stat-label">Online Users</div>
+                        <div class="stat-number" id="onlineUsers">0</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-eye stat-icon text_orange"></i>
+                        <div class="stat-label">Daily Visits</div>
+                        <div class="stat-number" id="dailyVisits">0</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-box-arrow-in-right stat-icon text_orange"></i>
+                        <div class="stat-label">Total Logins</div>
+                        <div class="stat-number" id="totalLogins">0</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-download stat-icon text_orange"></i>
+                        <div class="stat-label">News Downloads</div>
+                        <div class="stat-number" id="newsDownloads">0</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-book-half stat-icon text_orange"></i>
+                        <div class="stat-label">News Read</div>
+                        <div class="stat-number" id="newsRead">0</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="stat-card">
+                        <i class="bi bi-bookmark-heart stat-icon text_orange"></i>
+                        <div class="stat-label">News Saved</div>
+                        <div class="stat-number" id="newsSaved">0</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Charts Section -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="chart-card">
+                        <div class="chart-title">
+                            <div class="d-flex justify-content-between">
+                                <span><i class="bi bi-graph-up me-2"></i>News Activity Overview</span>
+                                <div class="btn-group me-2" role="group" aria-label="Second group">
+                                    <button id="newsActivityPrev" type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                    <button id="newsActivityNext" type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="newsActivityChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="chart-card">
+                        <div class="chart-title">
+                            <i class="bi bi-pie-chart me-2"></i>User Engagement
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <canvas id="engagementChart" width="300" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="chart-card">
+                        <div class="chart-title">
+                            <div class="d-flex justify-content-between">
+                                <span><i class="bi bi-graph-up me-2"></i>Users Activity Overview</span>
+                                <div class="btn-group me-2" role="group" aria-label="Second group">
+                                    <button id="usersActivityPrev" type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                    <button id="usersActivityNext" type="button" class="btn btn-outline-secondary">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="usersActivityChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="chart-card">
+                        <div class="chart-title">
+                            <i class="bi bi-people-fill me-2"></i>User Status Overview
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <svg class="progress-ring">
+                                        <circle class="bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="progress" id="onlineProgress" cx="60" cy="60" r="45"></circle>
+                                    </svg>
+                                </div>
+                                <h5>Online Users</h5>
+                                <p class="text-muted">Currently Active</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <svg class="progress-ring">
+                                        <circle class="bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="progress" id="dailyVisitsProgress" cx="60" cy="60" r="45"></circle>
+                                    </svg>
+                                </div>
+                                <h5>Daily Visits</h5>
+                                <p class="text-muted">Today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

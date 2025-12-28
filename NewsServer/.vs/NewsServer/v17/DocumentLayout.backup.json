@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\dal\\dbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:dal\\dbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\bl\\updatesharedarticleoffensiverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:bl\\updatesharedarticleoffensiverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\controllers\\savedarticlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:controllers\\savedarticlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\controllers\\sharedarticlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:controllers\\sharedarticlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|c:\\users\\ronin\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\newsserver\\newsserver\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7376AB4-D534-45B0-AE37-A196173E3D8B}|NewsServer.csproj|solutionrelative:controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAEwF0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T19:04:03.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBservices.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\DAL\\DBservices.cs",
+              "RelativeDocumentMoniker": "DAL\\DBservices.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\DAL\\DBservices.cs",
+              "RelativeToolTip": "DAL\\DBservices.cs",
+              "ViewState": "AQIAABcCAAAAAAAAAAAvwCQCAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:01:59.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateSharedArticleOffensiveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\BL\\UpdateSharedArticleOffensiveRequest.cs",
+              "RelativeDocumentMoniker": "BL\\UpdateSharedArticleOffensiveRequest.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\BL\\UpdateSharedArticleOffensiveRequest.cs",
+              "RelativeToolTip": "BL\\UpdateSharedArticleOffensiveRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T15:54:53.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SavedArticlesController.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\SavedArticlesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SavedArticlesController.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\SavedArticlesController.cs",
+              "RelativeToolTip": "Controllers\\SavedArticlesController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBoAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T08:07:56.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SharedArticlesController.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\SharedArticlesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SharedArticlesController.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\SharedArticlesController.cs",
+              "RelativeToolTip": "Controllers\\SharedArticlesController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAYwGYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T22:10:24.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseApiController.cs",
+              "ToolTip": "C:\\Users\\ronin\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD - \u05DE\u05D3\u05E2\u05D9 \u05D4\u05DE\u05D7\u05E9\u05D1\\\u05E9\u05E0\u05D4 \u05D1\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\NewsServer\\NewsServer\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "Controllers\\BaseApiController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAwE0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T15:13:35.951Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

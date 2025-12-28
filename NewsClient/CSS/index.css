@@ -1,0 +1,147 @@
+/*
+Template Name: News Times
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************news****************/
+.news_1_right1 ul{
+    border-bottom:3px solid var(--orange);
+ }
+.news_1_right1 ul .nav-link{
+    border:none!important;
+	background:var(--bs-dark);
+	color:var(--bs-white);
+	border-radius:0;
+	margin-right:3px;
+	text-transform:uppercase;
+	transition: 0.3s;
+ }
+.news_1_right1 ul .nav-link:hover{
+    color:var(--bs-white);
+    background:var(--orange);
+    border: none;
+	transition: 0.3s;
+ }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color:var(--bs-white);
+    background:var(--orange);
+    border: none;
+}
+/*********************news_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.center_home1 {
+   padding:15px;
+ }
+.center_home2_right{
+   margin-top:60px;
+ }
+.center_home2_right1 ul li{
+   margin-top:5px;
+   margin-bottom:5px;
+ }
+.news_1_right{
+   margin-top:20px;
+ }
+.news_1_right1 ul .nav-link {
+   margin-top:5px;
+}
+.center_home1_left3 .fs-3{
+   font-size:20px!important;
+ }
+.business_pg1_right{
+   margin-top:15px;
+ }
+.buiss_pg1_right{
+   margin-top:10px;
+}
+#buiss_pg .news_1_left2_inner2{
+   position:static!important;
+   background:var(--bs-dark)!important;
+ }
+.news_1_left2_inner2 br{
+   display:none;
+ }
+.news_1_left2_inner br{
+   display:none;
+ }
+.sport_pg1_right img{
+   width:100px;
+  }
+ #sport_page .news_1_left2_inner2{
+   position:static!important;
+   background:var(--bs-dark)!important;
+ }
+.video_pg_right{
+   margin-top:15px;
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+.sport_pg1_right img{
+   width:150px;
+  }
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.center_home1_center  .font_14{
+  font-size:10px;
+ }
+.center_home1_center {
+  padding-left:50px;
+  padding-right:10px!important;
+ }
+.center_home2_right1 ul li{
+   margin-top:5px;
+   margin-bottom:5px;
+ }
+.news_1_left2_inner2  .fs-6{
+   font-size:14px!important;
+ }
+#more .news_1_left2_inner{
+   margin-top:8px;
+   margin-bottom:8px;
+ } 
+.creator_inner li{
+    margin-top:5px;
+	margin-bottom:5px;
+ } 
+.sport_pg .news_1_left2_inner br{
+   display:none;
+ }
+.sport_pg1_right img{
+   width:150px;
+  }
+ 
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.center_home1_center  .font_14{
+  font-size:12px;
+ }
+.center_home1_center {
+  padding-left:50px;
+  padding-right:10px!important;
+ }
+.center_home2_right1 ul li{
+   margin-top:5px;
+   margin-bottom:5px;
+ }
+
+ }
+
+@media (min-width:1201px) and (max-width:1300px) {
+
+ }
+@media (min-width:1400px) and (max-width:2000px) {
+
+ }
+
+

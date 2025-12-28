@@ -1,0 +1,53 @@
+﻿<section class="pt-5 pb-5">
+    <div class="container-xl">
+
+        <b id="categoryTitle" class="d-inline-block p-1 px-3 text-uppercase font_14 text-white bg_orange">Users Management</b>
+        <hr class="line mt-0 mb-4 bg_orange">
+
+        <div class="row news_1">
+            <div class="col-md-12">
+                <div class="news_1_left">
+
+                    <div class="news_1_left2 mt-5">
+                        <div class="input-group">
+                            <input type="text" id="usersManagement_searchInput" class="form-control" placeholder="Search Here">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary bg_orange rounded-0 p-2 px-3 border-0" type="button" onclick="runSearch(false)">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="news_1_left2_inner">
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <b id="usersManagementListHeader" class="d-block  mt-2"></b>
+                                <b class="d-block mt-2 me-5">Block</b>
+                            </div>
+
+
+                            <ul id="usersManagementList" class="mb-0 mt-1">
+                                
+                                
+                            </ul>
+
+                            <div id="loadingSpinner" class="loading-spinner">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="mt-2">Loading more results...</div>
+                            </div>
+                            <div id="noMoreResults" class="no-more-results" style="display: none;">
+                                No more results to load
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

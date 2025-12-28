@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Paper</title>
+    <!--JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--Firebase SDKs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.17.1/firebase-app-compat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.17.1/firebase-database-compat.min.js"></script>
+    <!--Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.1/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.10.1/sweetalert2.min.js"></script>
+    <!--Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <!--Theme CSS -->
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/news.css" rel="stylesheet" />
+    <!--Costume style -->
+    <link href="css/Styles.css" rel="stylesheet">
+
+    <!--Scripts -->
+    <script src="JS/components/lottie.min.js"></script>
+    <script src="js/api/FirebaseApi.js?v=1"></script>
+    <script src="js/api/GeminiAPI.js?v=1"></script>
+    <script src="js/api/NewsApi.js?v=1"></script>
+    <script src="js/api/ServerApi.js?v=1"></script>
+    <script src="js/api/ImageApi.js?v=1"></script>
+    <script src="JS/api/WeatherApi.js?v=1"></script>
+    <script src="js/auth/LoggedInUser.js?v=1"></script>
+    <script src="js/components/AdminDashboard.js?v=1"></script>
+    <script src="js/components/Pages.js?v=1"></script>
+    <script src="js/components/Search.js?v=1"></script>
+    <script src="js/scripts/Utils.js?v=1"></script>
+    <script src="js/scripts/Script.js?v=1"></script>
+
+    <script>
+        $(document).ready(init);
+        function init() {
+            checkUserLoggedIn();
+            loadWeather();
+            loadActivePage();
+        }
+    </script>
+
+</head>
+<body>
+    <!-- Modal structure -->
+    <div class="modal fade" id="newsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <b class="text-uppercase fs-1 lh-1">
+                        <a>
+                            <i class="bi bi-newspaper me-1 col_orange"></i>
+                            News<span class="col_orange">Paper</span>
+                        </a>
+                    </b>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--Placeholder for fecthing html modal dialog contents-->
+                <div class="modal-body" id="newsModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Top header, visible only in desktop screen -->
+    <section id="top_head" class="pt-3 pb-3">
+        <div class="container-xl">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="top_head_left mt-2">
+                        <!--Weather container -->
+                        <div class="weather-current">
+                            <div class="weather-icon" id="weatherIcon"></div>
+                            <div class="weather-temp" id="weatherTemp"></div>
+                            <div class="weather-location" id="weatherLocation"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="top_head_center text-center">
+                        <b class="text-uppercase fs-1 lh-1">
+                            <!--Title of the site -->                         
+                            <a>
+                                <i class="bi bi-newspaper me-1 col_orange"></i>
+                                News<span class="col_orange">Paper</span>
+                                <span class="font_14 text-muted d-block mt-1">Start Your News With Us</span>
+                            </a>
+                        </b>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="top_head_right text-end">
+                        <ul class="mb-0">
+                            <!--List item for login -->
+                            <li id="loginLink" class="d-inline-block hide loginLinkMarker" onclick="handleUserLogin()">
+                                <div class="login_link pointer">
+                                    <i class="bi bi-person me-1 col_orange fs-5"></i>
+                                    <span>Login / Registration</span>
+                                </div>
+                            </li>
+                            <!--List item for the logged in user-->
+                            <li id="loggedInUserLink" class="d-flex justify-content-end align-items-center hide loggedInUserLinkMarker">
+                                <div>
+                                    <!--Notification bell-->
+                                    <button type="button" class="btn btn-outline-secondary border-0 position-relative dropdown-toggle me-2" data-bs-toggle="dropdown">
+                                        <i class="bi bi-bell" style="font-size: 20px"></i>
+                                        <span id="loggedInUserBadge" style="display: none" class="position-absolute bel_badge badge rounded-pill bg-danger userBadgeMarker">
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu drop_1 shadow notificationsDropdownMarker" aria-labelledby="navbarDropdown">
+                                    </ul>
+
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!--User image-->
+                                        <div class="profile-container">
+                                            <img id="userProfileImage" src="" alt="Profile Image" class="profile_image_sm userProfileImageMarker">
+                                            <div class="stars-container userProfileAvatarMarker"></div>
+                                        </div>
+                                        <!--Username-->
+                                        <span id="userName" class="fs-6 userNameMarker"></span>
+                                        <img class="filter_invert" src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="open/close icon">
+                                    </a>
+                                    <!--User menu-->
+                                    <ul id="userDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item pointer" onclick="handleUserProfile()"> Profile</a></li>
+                                        <li><a class="dropdown-item pointer" onclick="handleLogout()"> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-light w-100 border-bottom bg_orange">
+            <!--display only in small screen (mobile)-->
+            <div class="container-xl">
+                <b class="fs-3  d-block logo hide text-white"> <i class="bi bi-newspaper me-1 align-middle"></i> News Paper</b>
+                <div class="m-3 ">
+                    <ul class="mb-0 d-block d-lg-none">
+                        <li id="loginLink" class="d-inline-block hide loginLinkMarker" onclick="handleUserLogin()">
+                            <div class="login_link pointer">
+                                <i class="bi bi-person me-1 fs-5"></i>
+                                <span>Login / Registration</span>
+                            </div>
+                        </li>
+                        <li id="loggedInUserLink" class="d-flex justify-content-end align-items-center hide loggedInUserLinkMarker">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary border-0 position-relative dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-bell" style="font-size: 20px"></i>
+                                    <span id="loggedInUserBadge" style="display: none" class="position-absolute bel_badge badge rounded-pill bg-danger userBadgeMarker" />
+                                </button>
+                                <ul class="dropdown-menu drop_1 shadow notificationsDropdownMarker" aria-labelledby="navbarDropdown">
+                                </ul>
+                                <a class="dropdown-toggle login_link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="profile-container">
+                                        <img id="userProfileImage" src="" alt="Profile Image" class="profile_image_sm userProfileImageMarker">
+                                        <div class="stars-container userProfileAvatarMarker"></div>
+                                    </div>
+                                    <img class="filter_invert" src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="open/close icon">
+                                </a>
+                                <ul id="userDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item pointer" onclick="handleUserProfile()"> Profile</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="handleLogout()"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
+                    <img src="image/icons-svg/list.svg" class="pointer" width="40" height="40" alt="Open TemplateOnweb website menu" />
+                </button>
+                <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+                    <div class="offcanvas-header shadow">
+                        <b class="fs-3  d-block logo hide text-white"> <i class="bi bi-newspaper me-1 align-middle"></i> News Paper</b>
+                        <img src="image/icons-svg/x.svg" width="40" height="40" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
+
+                    </div>
+                    <div class="offcanvas-body pt-0 align-items-center">
+                        <!--Main menu-->
+                        <ul id="mainMenu" class="navbar-nav align-items-lg-center">
+                            <li id="homeMenuItem" class="nav-item">
+                                <a class="nav-link dropdown-toggle active fs-3 px-3 p-2 pointer" onclick="loadCenterPage(HOME_PAGE)">
+                                    <i class="bi bi-house"></i>
+                                </a>
+                            </li>
+                            <li id="categoryMenuItem" class="nav-item dropdown drop_border">
+                                <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+                                </a>
+                                <ul id="categoriesDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item pointer" onclick="selectCategory('business', this)"> Business</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="selectCategory('science', this)"> Science</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="selectCategory('health', this)"> Health</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="selectCategory('entertainment', this)"> Entertainment</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="selectCategory('sports', this)"> Sports</a></li>
+                                    <li><a class="dropdown-item pointer border-0" onclick="selectCategory('technology', this)"> Technology</a></li>
+                                </ul>
+                            </li>
+
+                            <li id="userMenuItem" class="nav-item dropdown drop_border">
+                                <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    User<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+                                </a>
+                                <ul id="userMenuDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                    <li id="userLoginMenuItem"><a class="dropdown-item pointer" onclick="handleUserLogin()"> Login</a></li>
+                                    <li id="userProfileMenuItem"><a class="dropdown-item pointer" onclick="handleUserProfile()"> Profile</a></li>
+                                    <li id="userTagsMenuItem"><a class="dropdown-item pointer" onclick="handleUserTags()"> Tags</a></li>
+                                    <li id="blockedUsersMenuItem"><a class="dropdown-item pointer" onclick="handleBlockedUsers()"> Blocked users</a></li>
+                                    <li id="userLogoutMenuItem"><a class="dropdown-item pointer" onclick="handleLogout()"> Logout</a></li>
+                                </ul>
+                            </li>
+
+                            <li id="articlesMenuItem" class="nav-item dropdown drop_border">
+                                <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Articles<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+                                </a>
+                                <ul id="articlesDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item pointer" onclick="loadCenterPage(SAVED_ARTICLES_PAGE)"> Saved</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="loadCenterPage(SHARED_ARTICLES_PAGE)"> Shared</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="loadCenterPage(SHARER_ARTICLES_PAGE)"> Given</a></li>
+                                </ul>
+                            </li>
+
+                            <li id="adminMenuItem" class="nav-item dropdown drop_border" style="display: none">
+                                <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+                                </a>
+                                <ul id="articlesDropdown" class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item pointer" onclick="loadCenterPage(ADMIN_DASHBOARD_PAGE)"> Dashbord</a></li>
+                                    <li><a class="dropdown-item pointer" onclick="loadCenterPage(USERS_MANAGEMENT_PAGE)"> Users</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav align-items-lg-center ms-auto">
+                            <li class="nav-item dropdown drop_border">
+                                <a class="nav-link dropdown-toggle border-0 bg_orange_dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                                <ul class="dropdown-menu drop_1 drop_search shadow p-3" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <div class="input-group">
+                                            <input type="text" id="homePage_searchInput" class="form-control" onkeypress="homePageKeyDown(event)" placeholder="Search Here">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary bg_orange rounded-0 p-2 px-3 border-0" type="button" onclick="goToSearch()">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--Placeholder to fetch html pages-->
+    <div id="centerPagePlaceHolder">
+
+    </div>
+
+    <!--Footer section-->
+    <section id="footer">
+        <div class="footer_m pt-5 pb-5 bg_dark">
+            <div class="container-xl">
+                <div class="row row-cols-1 row-cols-md-3 footer_2 mt-0">
+                    <div class="col-md-6">
+                        <div class="footer_2_left">
+                            <b class="text-uppercase fs-1 lh-1 text-white">
+                                <i class="bi bi-newspaper me-1 col_orange"></i>
+                                News<span class="col_orange">Paper</span>
+                                <span class="font_14 text-muted d-block mt-1 text-center xs_size">Start Your News With Us</span>
+                            </b>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-0 text-white-50 pt-3 end-0">
+                            © 2025 NewsPaper. All Rights Reserved | Design by
+                            <a class="col_orange fw-bold" href="http://www.templateonweb.com" target="_blank">TemplateOnWeb</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Theme JS -->
+    <script src="js/scripts/theme.min.js"></script>
+
+
+</body>
+</html>

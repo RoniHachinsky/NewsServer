@@ -1,0 +1,71 @@
+﻿<section class="pt-5 pb-5">
+    <div class="container-xl">
+
+        <b class="d-inline-block p-1 px-3 text-uppercase font_14 text-white bg_orange">Search Articles</b>
+        <hr class="line mt-0 mb-4 bg_orange">
+
+        <ul id="userTags" class="mb-0 d-flex flex-wrap font_13 tags">
+        </ul>
+
+
+        <div class="row news_1">
+            <div class="col-md-12">
+                <div class="news_1_left">
+
+                    <div class="news_1_left2 mt-2">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary bg_orange rounded-0 p-2 px-3 border-0" type="button" onclick="saveSearchToUserTags()">
+                                    <i class="bi bi-save"></i>
+                                </button>
+                            </span>
+                            <input type="text" id="searchPage_searchInput" class="form-control" placeholder="Search Here">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary bg_orange rounded-0 p-2 px-3 border-0" type="button" onclick="runSearch()">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="d-flex align-content-center align-items-center">
+                            <label class="form-check-label text-muted family_1 font_14 me-2">Sort by</label>
+                            <div class="btn-group  btn-group-sm mt-2" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="searchPage_sortByRadio" value="relevancy" onclick="runSearch()" id="relevancyRadioItem" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="relevancyRadioItem">Relevancy</label>
+
+                                <input type="radio" class="btn-check" name="searchPage_sortByRadio" value="popularity" onclick="runSearch()" id="popularityRadioItem" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="popularityRadioItem">Popularity</label>
+
+                                <input type="radio" class="btn-check" name="searchPage_sortByRadio" value="publishedAt" onclick="runSearch()" id="publishedRadioItem" autocomplete="off" checked>
+                                <label class="btn btn-outline-secondary" for="publishedRadioItem">Published</label>
+                            </div>
+                        </div>
+
+                        <div class="news_1_left2_inner">
+
+                            <b id="searchResultsTitle" class="d-block  mt-2">Search results</b>
+
+                            <ul id="searchResultsList" class="mb-0 mt-4">
+                                
+                            </ul>
+
+                            <div id="loadingSpinner" class="loading-spinner">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div class="mt-2">Loading more results...</div>
+                            </div>
+                            <div id="noMoreResults" class="no-more-results" style="display: none;">
+                                No more results to load
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+﻿<section class="login pt-4 pb-4">
+    <div class="container-xl">
+        <div class="row login_1">
+            <div class="col-md-12">
+                <div class="login_1l">
+                    <h5 class="bg_light p-3 rounded-3 fs-6 mb-3">Login</h5>
+                    <form id="loginForm" class="needs-validation" novalidate>
+                        <input id="loginUserEmail" class="form-control rounded-3" placeholder="Email" type="email" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                        <input id="loginUserPassword" class="form-control rounded-3 mt-3" placeholder="Password" type="password" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid password.
+                        </div>
+
+                        <div class="login_1li row mt-3">
+                            <div class="col-md-6 col-6">
+                                <div class="login_1lil">
+                                    <div class="form-check mb-0">
+                                        <input type="checkbox" class="form-check-input" id="keepLoggedInInput">
+                                        <label class="form-check-label" for="customCheck1">keep me logged in</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <div class="login_1lir text-end">
+                                    <h6 class="mb-0 col_orange pointer" onclick="loadRegisterPanel()">New user?</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" form="loginForm" class="btn btn-orange mb-0 mt-4">Login</button>
+                        <div id="errorMessage" class="d-flex hide">
+                            <h6 class="mt-4 col_orange">Email or password not found!</h6>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

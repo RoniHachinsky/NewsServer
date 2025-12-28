@@ -1,0 +1,159 @@
+﻿<section class="news_pg pb-5">
+    <div class="container-xl">
+        <div class="d-flex">
+            <button class="btn btn-primary button text-white my-3 p-3 px-5 border-0 rounded-0 text-uppercase font_12 fw-bold" onclick="navigateBack()">
+                <i class="bi bi-chevron-left"></i>
+                Back
+            </button>
+        </div>
+        <div class="row news_pg1">
+            <div class="col-md-8">
+                <div class="news_dt">
+                    <div id="articleContainer" class="news_dt1">
+                        <div class="img-placeholder extra-large"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news_pg1_right">
+                    <div class="news_pg1_right1 bg_light py-4 px-3">
+                        <b class="d-inline-block py-0 px-3 text-uppercase  text-white bg_orange">
+                            <i class="bi bi-stars" style="font-size: 24px"></i>
+                            AI Analytics
+                        </b>
+                        <hr class="line mt-0 mb-4 bg_orange">
+                        <div class="row">
+                            <div class="col-lg-3 p-2">
+                                <a href="#aiSection">
+                                    <div class="ai-card">
+                                        <i class="bi bi-file-earmark-text ai-icon text_orange"></i>
+                                        <div class="ai-number" id="wordsCounter" style="display: none">- -</div>
+                                        <div class="ai-number img-placeholder extra-small" id="wordsLoader"></div>
+                                        <div class="ai-label">Words</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 p-2">
+                                <a href="#aiSection">
+                                    <div class="ai-card">
+                                        <i class="bi bi-clock ai-icon text_orange"></i>
+                                        <div class="ai-number" id="readTimeCounter" style="display: none">- -</div>
+                                        <div class="ai-number img-placeholder extra-small" id="readTimeLoader"></div>
+                                        <div class="ai-label">Minutes read</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 p-2">
+                                <a href="#aiSection">
+                                    <div class="ai-card">
+                                        <i id="reliabilityIcon" class="bi bi-hand-thumbs-up ai-icon text_orange"></i>
+                                        <div class="ai-number" id="reliabilityRatio" style="display: none">- -</div>
+                                        <div class="ai-number img-placeholder extra-small" id="reliabilityLoader"></div>
+                                        <div class="ai-label">Credibility</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 p-2">
+                                <a href="#related">
+                                    <div class="ai-card">
+                                        <i class="bi bi-link-45deg ai-icon text_orange"></i>
+                                        <div class="ai-number" id="relatedCounter" style="display: none">- -</div>
+                                        <div class="ai-number img-placeholder extra-small" id="relatedLoader"></div>
+                                        <div class="ai-label">Related</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="articleMapContainer" class="news_pg1_right1 bg_light py-4 px-3 mt-4">
+                        <b id="articleMapHeader" class="d-inline-block p-1 px-3 text-uppercase  text-white bg_orange">Locations Mentioned</b>
+                        <hr class="line mt-0 mb-4 bg_orange">
+                        <div>
+                            <div id="articleMapLoader" class="map_iframe"></div>
+                            <iframe id="articleMap" class="map_iframe" style="display: none" allowfullscreen="" src="about:blank"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row news_pg1">
+            <div class="col-md-12">
+                <!--AI section container-->
+                <div id="aiSection" class="bg_light p-4 my-4">
+                    <b>
+                        <i class="bi bi-stars" style="font-size: 24px"></i>
+                        <div id="articleAIHeaderSpinner" class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <span id="articleAIHeader">
+                            AI summarize
+                        </span>
+                    </b>
+
+                    <ul id="articleAIContainer" class="mb-0 flex_box ms-3 mt-4 font_14">
+                        <li class="d-flex"><span><i class="bi bi-chevron-right me-1 col_orange"></i> </span> Porta Noe tested negative for Tech Literacy.</li>
+                        <li class="d-flex mt-2"><span><i class="bi bi-chevron-right me-1 col_orange"></i> </span> Lorem’s diagnosis could spell disaster for his campaign.</li>
+                        <li class="d-flex mt-2"><span><i class="bi bi-chevron-right me-1 col_orange"></i> </span> The Ipsum team is on guard against foreign adversaries who could exploit the lack of tech literacy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="related" class="pt-5 pb-5 bg_light">
+    <div class="container-xl">
+        <b class="d-inline-block p-1 px-3 text-uppercase font_14 text-white bg_orange mb-4"> Related articles</b>
+        <div id="relatedArticlesContainer" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-md-2">
+            <div class="col">
+                <div class="trend_2_inner">
+                    <div class="trend_2_in position-relative">
+                        <div class="trend_2_in1">
+                            <div class="img-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trend_2_inner">
+                    <div class="trend_2_in position-relative">
+                        <div class="trend_2_in1">
+                            <div class="img-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trend_2_inner">
+                    <div class="trend_2_in position-relative">
+                        <div class="trend_2_in1">
+                            <div class="img-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="trend_2_inner">
+                    <div class="trend_2_in position-relative">
+                        <div class="trend_2_in1">
+                            <div class="img-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="mt-2">Loading more results...</div>
+        </div>
+        <div id="noMoreResults" class="no-more-results" style="display: none;">
+            No more results to load
+        </div>
+    </div>
+</section>

@@ -1,0 +1,100 @@
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\appsettings.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\NewsServer.exe
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\NewsServer.deps.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\NewsServer.runtimeconfig.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\NewsServer.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\NewsServer.pdb
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Data.SqlClient.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.SqlClient.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.csproj.AssemblyReference.cache
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.AssemblyInfoInputs.cache
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.AssemblyInfo.cs
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.csproj.CoreCompileInputs.cache
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets\msbuild.NewsServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets\msbuild.build.NewsServer.props
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.NewsServer.props
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.NewsServer.props
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\scopedcss\bundle\NewsServer.styles.css
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.csproj.Up2Date
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\refint\NewsServer.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.pdb
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.genruntimeconfig.cache
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\ref\NewsServer.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\obj\Debug\net6.0\NewsServer.sourcelink.json
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\edenm\Desktop\לימודים\שנה ב'\סמסטר ב'\צד שרת\NewsSite\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\appsettings.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.staticwebassets.endpoints.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.exe
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.deps.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.runtimeconfig.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\NewsServer.pdb
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Data.SqlClient.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Data.SqlClient.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.csproj.AssemblyReference.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.AssemblyInfoInputs.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.AssemblyInfo.cs
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.csproj.CoreCompileInputs.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\rjimswa.dswa.cache.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\scopedcss\bundle\NewsServer.styles.css
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.csproj.Up2Date
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\refint\NewsServer.dll
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.pdb
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\NewsServer.genruntimeconfig.cache
+C:\Users\ronin\Desktop\לימודים - מדעי המחשב\שנה ב\סמסטר ב\צד שרת\NewsServer\NewsServer\obj\Debug\net6.0\ref\NewsServer.dll

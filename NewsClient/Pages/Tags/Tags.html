@@ -1,0 +1,33 @@
+﻿<section class="login pt-4 pb-4">
+    <div class="container-xl">
+        <div class="row login_1">
+            <div class="col-md-12">
+                <div class="login_1r">
+                    <h5 class="bg_light p-3 rounded-3 fs-6 mb-3">Tags</h5>
+                    <form id="tagsForm" class="needs-validation" novalidate>
+                        <input id="tagName" class="form-control rounded-3 mt-3" placeholder="Tag Name *" type="text" required minlength="2">
+                        <div class="invalid-feedback">
+                            Tag name must be at least 2 letters long.
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" form="tagsForm" class="btn btn-orange mb-0 mt-4">Add tag</button>
+                        </div>
+
+                        <div id="errorMessage" class="d-flex hide">
+                            <h6 class="mt-3 col_orange"></h6>
+                        </div>
+                    </form>
+                    <div class="news_1_left5 mt-3">
+                        <b class="d-inline-block p-1 px-3 text-uppercase font_14 text-white bg_orange mb-3"> User Tags</b>
+                        <div class="px-3">
+                            <b id="usersTagsHeader"></b>
+                        </div>
+                        <ul id="userEditTags" class="mb-0 d-flex flex-wrap font_13 tags">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

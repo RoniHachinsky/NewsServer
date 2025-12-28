@@ -1,0 +1,59 @@
+﻿<section class="login pt-4 pb-4">
+    <div class="container-xl">
+        <div class="row login_1">
+            <div class="col-md-12">
+                <div class="login_1r">
+                    <h5 class="bg_light p-3 rounded-3 fs-6 mb-3">Profile</h5>
+                    <form id="profileForm" class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <input id="profileEmail" readonly class="form-control rounded-3" type="email">
+                            <label for="profileEmail">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input id="profilePassword" readonly class="form-control rounded-3 mt-3" type="password">
+                            <label for="profilePassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input id="profileName" class="form-control rounded-3 mt-3" placeholder="Name *" type="text" required minlength="2">
+                            <label for="profileName">Name</label>
+                            <div class="invalid-feedback">
+                                Name must be at least 2 letters long.
+                            </div>
+                        </div>
+
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" id="maleCheck" name="genderRadio" required>
+                            <label class="form-check-label" for="maleCheck">Male</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="radio" class="form-check-input" id="femaleCheck" name="genderRadio" required>
+                            <label class="form-check-label" for="femaleCheck">Female</label>
+                            <div class="invalid-feedback">Gender must be specified</div>
+                        </div>
+
+                        <div class="mt-3 d-flex justify-content-between align-items-center">
+                            <button type="button" id="uploadProfileBtn" class="btn btn-outline-primary">Profile Image</button>
+                            <input type="file" id="profileImage" accept="image/*" style="display: none;">
+                            <div class="mt-2 profile_image_preview_container" id="profileImagePreviewContainer" style="display:none;">
+                                <img id="profileImagePreview" src="" alt="Profile Image" class="profile_image_lg">
+                                <a class="bg-white rounded-circle text-center col_orange p-2 delete-btn" onclick="clearProfileImage()">
+                                    <i class="bi bi-trash3"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" form="profileForm" class="btn btn-orange mb-0 mt-4">Update Profile</button>
+                            <button type="button" class="btn btn-secondary mb-0 mt-4" onclick="closeNewsDialog()">Cancel</button>
+                        </div>
+
+                        <div id="errorMessage" class="d-flex hide">
+                            <h6 class="mt-4 col_orange"></h6>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
